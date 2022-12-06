@@ -1,0 +1,42 @@
+body::before{
+    display:block;
+    content:'';
+    height:55px;
+}
+body{
+    
+    background-color:#eff7f6;
+}
+.bg{
+    background-color:#eff7f6;
+}
+
+h1 span {
+    font-size  : 96px;
+    font-weight: 900;
+}
+.news-input{
+    width:60%;
+}
+.rounded-pill{
+    border-radius: 0px 50px 50px 0px !important;
+}
+.search-mode{
+    border-radius: 50px 0px 0px 50px !important;
+}
+.about{
+    background-color:#42C2FF;
+}
+.card{
+    width:30% !important
+}
+
+
+@media(max-width:992px){
+    .news-input{
+        width:100%;
+    }
+    .card{
+        width:80% !important
+    }
+}

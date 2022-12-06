@@ -1,0 +1,289 @@
+<%- include("includes/head") %>
+
+<%- include("includes/nav") %>
+
+    <!-- Showcase -->
+    <section class=" text-dark p-lg-5 p-0 text-center text-sm-start">
+        <div class="container">
+
+            <div class="d-flex justify-content-center">
+                <div class="news-input text-center">
+                    <h1><span class="text-primary fw-bolder">K</span>imbo</spa>
+                    </h1>
+                    <p class="lead">Dicionário umbundu português</p>
+                    <div class="feedback text-start ">
+
+                    </div>
+                    <form action="/search/pt" method="POST" class="input-group search-form ">
+                        <select class="btn btn-primary search-mode " type="button">
+                            <option value="pt">Portguês</option>
+                            <option value="ub">Umbundu</option>
+                            
+                        </select>
+                        
+                        <input type="text" class="form-control searchword rounded-pill" name=searchword placeholder="Escreva para pesquisar"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn shadow-none" type="submit" id="button-addon2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <sextion class="p-5">
+        <div class="container">
+            <div class="row justify-content-center  g-4">
+
+                <div class="card  text-dark shadow-sm ">
+                    <%if(errors.length>0){%>
+                        <%mode=0%>
+                        <%errors.forEach((error)=>{%>
+                            
+                            <h6 class="card-title mt-3">
+                                <%=error%>
+                            </h6>
+                            <p class="card-text mt-3 mb-3">
+                                <span class="bi bi-pencil-square"><a
+                                        href="https://silvestreoliver961.kpages.online/umbundu">
+                                        Acesse as nossas aulas</a>
+                                </span>
+                            </p>
+                        <%})%>
+                    <%}else{%>
+                        <%if(result["0"]){%>
+                            <%const word=result["0"]%>
+                            <%if(word.language==="pt" ){%>
+                                <div class="card-body ">
+                                    <div class="h4 mb-3 text-center text-capitalize">
+                                        <%=word.portuguese%>
+                                    </div>
+                                    <h6 class="card-title text-capitalize">
+                                        <%if(word.umbundu.length> 1){%>
+                                            <%word.umbundu.forEach((ub)=>{%>
+                                                <%if(word.umbundu[word.umbundu.length -1] !==ub){%>
+                                                    <%=ub+", "%>
+                                                   
+                                                <%}else{%>
+                                                    <%=ub+"."%>
+                                                <%}%>
+                                            <%})%>
+                                        <%}else{%>
+                                            <%=word.umbundu%>
+                                        <%}%>
+                                    </h6>
+                                    <p class="card-text mt-3">
+                                        <span class="bi bi-pencil-square"><a
+                                                href="https://silvestreoliver961.kpages.online/umbundu">
+                                                Acesse as nossas aulas</a>
+                                        </span>
+                                    </p>
+                                </div>
+                                <%mode=0%>
+                            <%}%>
+                            <%if(word.language==="ub" ){%>
+                                <div class="card-body ">
+                                    <div class="h4 mb-3 text-center text-capitalize">
+                                        <%=word.terms%>
+                                    </div>
+                                    <h6 class="card-title text-capitalize">
+                                        <%=word.portuguese%>
+                                    </h6>
+                                    <p class="card-text mt-3">
+                                        <span class="bi bi-pencil-square"><a
+                                            href="https://silvestreoliver961.kpages.online/umbundu">
+                                            Acesse as nossas aulas</a>
+                                        </span>
+                                    </p>
+                                </div>
+                                <%mode=0%>
+                            <%}%>
+                        <%}%> 
+                    <%}%>
+                    <%if (mode!==0 ){%>
+                        <div class="card-body" >
+                            <div class="h4 mb-3 text-center text-capitalize">
+                                Aprender
+                            </div>
+                            <h6 class="card-title text-capitalize">
+                                Oku lilongisa
+                            </h6>
+                            <p class="card-text mt-3">
+                                <span class="bi bi-pencil-square"><a
+                                    href="https://silvestreoliver961.kpages.online/umbundu">
+                                    Acesse as nossas aulas</a>
+                                </span>
+                            </p>
+                        </div>
+                    <%}%>
+                    
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </sextion>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-md-6 ">
+                    <h2>Aprenda as bases</h2>
+                    <p>
+                    <h4>
+                        Como iniciar um diálogo em umbundu
+                    </h4>
+                    </p>
+                    <p>
+                        A primeira coisa que normalmente fazemos quando queremos iniciar um diálogo, é cumprimentar:
+                        Olá, oi.
+                        Em umbundu diz-se: Kalunga.
+                    <p>
+                        A outra maneira de começarmos um diálogo é utilizando os três períodos do dia: bom dia, boa
+                        tarde, boa
+                        noite.
+                    </p>
+
+                    Em umbundu a expressão para estes 3 saudações é a mesma: Kalunga.
+                    </p>
+                    <a href="/learn" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right">Ler mais</i>
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <h2>Vocabulário</h2>
+                    <table class="table">
+                        <thead class="text-center">
+                            <th colspan="2">Partes do corpo Humano</th>
+                        </thead>
+                        <tr>
+                            <td>Cabeça </td>
+                            <td>Utue </td>
+                        </tr>
+                        <tr>
+                            <td>Olho/olhos</td>
+                            <td>Iso/ Ovasso</td>
+                        </tr>
+                        <tr>
+                            <td>Boca</td>
+                            <td> Omela</td>
+                        </tr>
+                        <tr>
+                            <td>Língua</td>
+                            <td> Elaka</td>
+                        </tr>
+                    </table>
+                    <a href="/learn#vocabulary" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right">Ler mais</i>
+                    </a>
+                    
+                </div>
+                <div class="col-md-6 ">
+                    <h2>Os números</h2>
+                    
+                    <p>
+                        Em umbundu a contagem de números cardinais é a mesma que a dos números ordinais, com a exceção do
+                        número <b>1</b> (um = mosi, primeiro = tete). Exemplo de outros números:
+                        <p>
+                        <ul>
+                            <li>Dois - Vali / Segundo - Vali</li>
+                            <li>Três - Tatu / Terceiro - Tatu</li>
+                            <li>Quatro - Kualã / Quarto - Kualã Etc...</li>
+                        </ul>
+                    </p>
+                    <a href="/learn#numbers" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right">Ler mais</i>
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <h2>Os verbos</h2>
+                    
+                    <p>
+                        Você provavelmente já percebeu que em umbundu os verbos Ser e Estar são apenas um.
+                    Ser/Estar: <b>Oku kala</b>. <br>
+                    Apesar disso existem algumas diferênças entre eles. Comecemos pela diferênça mais visível. Em
+                    umbundu o verbo ser não tem conjugação no presente do indicativo.<br>
+                    Para ajudá-lo a entender este assunto de forma muito mais clara e simples veja a conjugação abaixo
+                    em português.
+                    <p>
+                    
+                    </p>
+                    <a href="/learn#verbs" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right">Ler mais</i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-us" class="p-5 ">
+        <div class="container">
+            <h2 class="text-center text-dark">Quem Somos?</h2>
+            <p class="lead text-center text-dark mb-5">
+                O dicionário KIMBO é parte de um projeto de ensino da
+                língua umbundu, dirigido por Silvestre de Oliveira e Victor Lukoki. Periódicamente o dicionário vai
+                sendo atualizado para
+                melhor atender as suas necessidades.
+            </p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="card-body text-center shadow h-100 bg-light">
+                        
+                        <img src="./assets/img/eu.jpg" class="rounded-circle mb-3" alt="Victor Lukoki" />
+                        <h3 class="card-title mb-3">Victor Lukoki</h3>
+                        <p class="card-text">
+                            Desenvolvedor de páginas web e aplicativos móveis. <br> <br>
+                        </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="https://github.com/K0R1NGA69/Kimbo"><i class="bi bi-github text-dark mx-1"></i></a>
+                        <a href="https://wa.link/8jgnww"><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6  col-lg-3">
+                    <div class="card-body text-center shadow h-100 bg-light">
+                        <img src="./assets/img/silvestre.jpg" class="rounded-circle mb-3" alt="" />
+                        <h3 class="card-title mb-3">Silvestre de Oliveira</h3>
+                        <p class="card-text">
+                            Professor de umbundu, Designer Gráfico e empreendedor digital
+                        </p>
+                        <a href="https://www.facebook.com/Silvestreily"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="https://www.youtube.com/watch?v=CS4d3E3LmmM"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                        <a href="https://wa.link/07prx3"><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                    </div>
+                </div>
+    </section>
+<!-- Footer -->
+<%- include("includes/footer") %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

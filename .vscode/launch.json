@@ -1,0 +1,15 @@
+{
+    "configurations": [
+    {
+        "type": "firefox",
+        "request": "attach",
+        "name": "Attach"
+    },
+        {
+            "type": "pwa-chrome",
+            "name": "https://localhost:5000",
+            "request": "launch",
+            "url": "https://localhost:5000"
+        }
+    ]
+}
