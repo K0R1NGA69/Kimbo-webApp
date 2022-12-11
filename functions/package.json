@@ -8,7 +8,7 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "start": "nodemon server.js --ignore public --ignore frontend ",
+    "local": "nodemon server.js --ignore public --ignore frontend ",
     "dev": "webpack -w "
   },
   "engines": {
