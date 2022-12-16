@@ -1,0 +1,116 @@
+[debug] [2022-12-14T21:19:47.880Z] ----------------------------------------------------------------------
+[debug] [2022-12-14T21:19:47.881Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-12-14T21:19:47.881Z] CLI Version:   11.16.1
+[debug] [2022-12-14T21:19:47.881Z] Platform:      linux
+[debug] [2022-12-14T21:19:47.881Z] Node Version:  v18.12.1
+[debug] [2022-12-14T21:19:47.882Z] Time:          Wed Dec 14 2022 22:19:47 GMT+0100 (Central European Standard Time)
+[debug] [2022-12-14T21:19:47.882Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-14T21:19:47.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-14T21:19:47.917Z] > authorizing via signed-in user (victorlukoky@gmail.com)
+[debug] [2022-12-14T21:19:47.918Z] [iam] checking project kimbo-website for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-14T21:19:47.919Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimbo-website:testIamPermissions [none]
+[debug] [2022-12-14T21:19:47.919Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimbo-website:testIamPermissions x-goog-quota-user=projects/kimbo-website
+[debug] [2022-12-14T21:19:47.919Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimbo-website:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-14T21:19:49.080Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimbo-website:testIamPermissions 200
+[debug] [2022-12-14T21:19:49.081Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kimbo-website:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-14T21:19:49.081Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kimbo-website/serviceAccounts/kimbo-website@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-12-14T21:19:49.081Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kimbo-website/serviceAccounts/kimbo-website@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-12-14T21:19:49.730Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kimbo-website/serviceAccounts/kimbo-website@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-12-14T21:19:49.730Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kimbo-website/serviceAccounts/kimbo-website@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-12-14T21:19:49.732Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website [none]
+[debug] [2022-12-14T21:19:49.968Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website 200
+[debug] [2022-12-14T21:19:49.968Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website {"projectId":"kimbo-website","projectNumber":"895741231776","displayName":"kimbo-website","name":"projects/kimbo-website","resources":{"hostingSite":"kimbo-website"},"state":"ACTIVE","etag":"1_2f9937b2-3d13-4227-9b06-b4e82297bd3c"}
+[info] 
+[info] === Deploying to 'kimbo-website'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2022-12-14T21:19:49.975Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website [none]
+[debug] [2022-12-14T21:19:50.191Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website 200
+[debug] [2022-12-14T21:19:50.191Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website {"projectId":"kimbo-website","projectNumber":"895741231776","displayName":"kimbo-website","name":"projects/kimbo-website","resources":{"hostingSite":"kimbo-website"},"state":"ACTIVE","etag":"1_2f9937b2-3d13-4227-9b06-b4e82297bd3c"}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2022-12-14T21:19:50.196Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-12-14T21:19:50.197Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/kimbo-website
+[debug] [2022-12-14T21:19:50.199Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-12-14T21:19:50.200Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/kimbo-website
+[debug] [2022-12-14T21:19:50.202Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudbuild.googleapis.com [none]
+[debug] [2022-12-14T21:19:50.202Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudbuild.googleapis.com x-goog-quota-user=projects/kimbo-website
+[debug] [2022-12-14T21:19:50.204Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/artifactregistry.googleapis.com [none]
+[debug] [2022-12-14T21:19:50.204Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/artifactregistry.googleapis.com x-goog-quota-user=projects/kimbo-website
+[debug] [2022-12-14T21:19:51.032Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/runtimeconfig.googleapis.com 200
+[debug] [2022-12-14T21:19:51.033Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-12-14T21:19:51.084Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudbuild.googleapis.com 200
+[debug] [2022-12-14T21:19:51.084Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2022-12-14T21:19:51.183Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/artifactregistry.googleapis.com 200
+[debug] [2022-12-14T21:19:51.183Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2022-12-14T21:19:51.209Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudfunctions.googleapis.com 200
+[debug] [2022-12-14T21:19:51.209Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/kimbo-website/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2022-12-14T21:19:51.211Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/adminSdkConfig [none]
+[debug] [2022-12-14T21:19:51.437Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/adminSdkConfig 200
+[debug] [2022-12-14T21:19:51.437Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/adminSdkConfig {"projectId":"kimbo-website","storageBucket":"kimbo-website.appspot.com"}
+[debug] [2022-12-14T21:19:51.439Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kimbo-website/configs [none]
+[debug] [2022-12-14T21:19:51.959Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kimbo-website/configs 200
+[debug] [2022-12-14T21:19:51.959Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/kimbo-website/configs {}
+[info] i  functions: preparing codebase default for deployment 
+[debug] [2022-12-14T21:19:51.963Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-14T21:19:52.840Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "local": "nodemon server.js --ignore public --ignore frontend ",
+    "dev": "webpack -w "
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0-beta3",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "core-js": "^3.21.1",
+    "css-loader": "^6.5.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^15.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "minisearch": "^3.3.0",
+    "mongoose": "^6.1.9",
+    "regenerator-runtime": "^0.13.9",
+    "style-loader": "^3.3.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "private": true
+}
+[debug] [2022-12-14T21:19:52.841Z] Building nodejs source
+[debug] [2022-12-14T21:19:52.841Z] Failed to validate key PORT: Error: Key PORT is reserved for internal use.
+[error] Error: Failed to load environment variables from .env.:
+[error] - Error Key PORT is reserved for internal use.
