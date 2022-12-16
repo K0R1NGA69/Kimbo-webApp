@@ -45,20 +45,15 @@ app.set("view engine", "ejs")
 app.use(routes)
 
 const PORT = process.env.PORT || 3000
+console.log(process.NODE_ENV)
 
+// Run Local without firebase emulator
+// app.on("Done", () => {
+//     app.listen(PORT, () => {
+//         console.log("Acess http://localhost:3000")
+//         console.log("Server Running on port 3000")
+//     })
+// })
 
-
-app.on("Done", () => {
-    app.listen(PORT, () => {
-        console.log("Acess http://localhost:3000")
-        console.log("Server Running on port 3000")
-    })
-})
 exports.app = functions.https.onRequest(app)
-// // Create and deploy your first functions
-// // https://firebase.google.com/docs/functions/get-started
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+

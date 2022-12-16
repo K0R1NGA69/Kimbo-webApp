@@ -1,3 +1,4 @@
+
 const DictBd = require("../models/DictionaryModel")
 const MiniSearch = require("minisearch")
 
@@ -8,7 +9,7 @@ exports.search = async (req, res) => {
         const s_mode = req.params.mode
         const word = req.body.searchword.toLowerCase()
         const dictionary = new DictBd(word)
-
+        console.log("OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy")
         async function searchPtUb(word_list, word) {
                 let miniSearch = new MiniSearch({
                         idField: 'portuguese',
@@ -35,7 +36,9 @@ exports.search = async (req, res) => {
         }
 
         if (s_mode === "pt") {
+                console.log("OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2")
                 let result = await dictionary.search(s_mode, searchPtUb)
+                console.log("OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3")
                 if (dictionary.errors.length > 0) {
                         req.flash('errors', dictionary.errors)
                         req.session.save(() => {
@@ -47,10 +50,12 @@ exports.search = async (req, res) => {
                 result["0"].language = "pt"
                 req.flash('result', result)
                 console.log(result)
+                
                 req.session.save(() => {
                         res.redirect("/")
+            
                 })
-
+                
 
         }
         else {
