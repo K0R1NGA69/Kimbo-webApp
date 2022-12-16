@@ -52,7 +52,10 @@ exports.search = async (req, res) => {
                 console.log(result)
                 
                 req.session.save(() => {
+                        Promise.all([result])
+                        console.log("redirecting")
                         res.redirect("/")
+                        
             
                 })
                 

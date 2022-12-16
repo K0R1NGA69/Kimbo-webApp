@@ -1,0 +1,1021 @@
+[debug] [2022-12-16T19:25:52.743Z] ----------------------------------------------------------------------
+[debug] [2022-12-16T19:25:52.744Z] Command:       /usr/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-12-16T19:25:52.744Z] CLI Version:   11.16.1
+[debug] [2022-12-16T19:25:52.744Z] Platform:      linux
+[debug] [2022-12-16T19:25:52.744Z] Node Version:  v18.12.1
+[debug] [2022-12-16T19:25:52.745Z] Time:          Fri Dec 16 2022 20:25:52 GMT+0100 (Central European Standard Time)
+[debug] [2022-12-16T19:25:52.745Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-16T19:25:52.797Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-16T19:25:52.797Z] > authorizing via signed-in user (victorlukoky@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-12-16T19:25:52.801Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-16T19:25:52.801Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-16T19:25:52.802Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-16T19:25:52.807Z] [hub] writing locator at /tmp/hub-kimbo-website.json
+[debug] [2022-12-16T19:25:52.817Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-16T19:25:52.817Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-16T19:25:52.817Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-12-16T19:25:52.825Z] defaultcredentials: writing to file /home/k0r1nga69/.config/firebase/victorlukoky_gmail_com_application_default_credentials.json
+[debug] [2022-12-16T19:25:52.828Z] Setting GAC to /home/k0r1nga69/.config/firebase/victorlukoky_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/k0r1nga69/.config/firebase/victorlukoky_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-16T19:25:52.829Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/adminSdkConfig [none]
+[debug] [2022-12-16T19:25:53.068Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/adminSdkConfig 200
+[debug] [2022-12-16T19:25:53.068Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/adminSdkConfig {"projectId":"kimbo-website","storageBucket":"kimbo-website.appspot.com"}
+[debug] [2022-12-16T19:25:53.078Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/kimbo-website/sites 
+[debug] [2022-12-16T19:25:53.921Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/kimbo-website/sites 200
+[debug] [2022-12-16T19:25:53.921Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/kimbo-website/sites {"sites":[{"name":"projects/kimbo-website/sites/kimbo-website","defaultUrl":"https://kimbo-website.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-16T19:25:53.921Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/webApps/-/config [none]
+[debug] [2022-12-16T19:25:54.696Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/webApps/-/config 200
+[debug] [2022-12-16T19:25:54.696Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website/webApps/-/config {"projectId":"kimbo-website","appId":"1:895741231776:web:387ceed6ec8a785f797fc5","storageBucket":"kimbo-website.appspot.com","apiKey":"AIzaSyCkSStt7-GspmVIbCHWpIv9oHi4VzxjIVw","authDomain":"kimbo-website.firebaseapp.com","messagingSenderId":"895741231776","measurementId":"G-1WJDDBDX6R"}
+[debug] [2022-12-16T19:25:54.699Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website [none]
+[debug] [2022-12-16T19:25:54.938Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website 200
+[debug] [2022-12-16T19:25:54.938Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kimbo-website {"projectId":"kimbo-website","projectNumber":"895741231776","displayName":"kimbo-website","name":"projects/kimbo-website","resources":{"hostingSite":"kimbo-website"},"state":"ACTIVE","etag":"1_2f9937b2-3d13-4227-9b06-b4e82297bd3c"}
+[info] ✔  hosting[kimbo-website]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-12-16T19:25:54.949Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-16T19:25:54.949Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-16T19:25:54.950Z] Starting Emulator UI with command {"binary":"node","args":["/home/k0r1nga69/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/k0r1nga69/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-16T19:25:55.062Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-12-16T19:25:55.062Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\" for Cloud Functions..."}}
+[debug] [2022-12-16T19:25:55.213Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-16T19:25:56.071Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "local": "nodemon server.js --ignore public --ignore frontend ",
+    "dev": "webpack -w "
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0-beta3",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "core-js": "^3.21.1",
+    "css-loader": "^6.5.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^15.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "minisearch": "^3.3.0",
+    "mongoose": "^6.1.9",
+    "regenerator-runtime": "^0.13.9",
+    "style-loader": "^3.3.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "private": true
+}
+[debug] [2022-12-16T19:25:56.071Z] Building nodejs source
+[debug] [2022-12-16T19:25:56.071Z] Analyzing nodejs backend spec
+[debug] [2022-12-16T19:25:56.072Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-16T19:25:56.194Z] Serving at port 9005
+
+[debug] [2022-12-16T19:25:56.352Z] undefined
+
+[debug] [2022-12-16T19:25:56.355Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-16T19:25:56.361Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-16T19:25:56.662Z] Connected
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] ✔  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/kimbo-website/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/kimbo-website/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:17.883Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 
+[debug] [2022-12-16T19:26:17.886Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:17.886Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:17.887Z] Accepted request GET /kimbo-website/us-central1/app/ --> us-central1-app
+[debug] [2022-12-16T19:26:17.889Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:17.889Z] [functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:26:17.896Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:26:17.896Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2022-12-16T19:26:18.369Z] [runtime-status] [34711] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:18.370Z] [runtime-status] [34711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:18.370Z] [runtime-status] [34711] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:26:18.370Z] [runtime-status] [34711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:18.392Z] [runtime-status] [34711] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:26:18.392Z] [runtime-status] [34711] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:26:18.393Z] [runtime-status] [34711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:18.393Z] [runtime-status] [34711] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:18.394Z] [runtime-status] [34711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:18.394Z] [runtime-status] [34711] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:26:18.562Z] [runtime-status] [34711] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:34711) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:34711) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:34711) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:26:18.564Z] [runtime-status] [34711] Listening to port: /tmp/fire_emu_496e13cb506054bf.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34711] Listening to port: /tmp/fire_emu_496e13cb506054bf.sock"}}
+[debug] [2022-12-16T19:26:18.604Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:18.604Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:18.604Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:18.618Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:18.618Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 10.635414ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 10.635414ms"}}
+[debug] [2022-12-16T19:26:18.619Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 200
+[debug] [2022-12-16T19:26:18.619Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:18 +0000] "GET / HTTP/1.1" 200 16654 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:18 +0000] \"GET / HTTP/1.1\" 200 16654 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/img/banner%20revista%20blogg.png to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:18.672Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 
+[debug] [2022-12-16T19:26:18.675Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:18.675Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:18.675Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png --> us-central1-app
+[debug] [2022-12-16T19:26:18.678Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:18.678Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png"}}
+[debug] [2022-12-16T19:26:18.678Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:18.678Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] [hosting] Rewriting /assets/img/eu.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:18.680Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 
+[info] [hosting] Rewriting /assets/img/silvestre.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:18.681Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 
+[info] [hosting] Rewriting /assets/js/bundle.js to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:18.682Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:18.685Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-12-16T19:26:18.685Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:26:18.685Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/eu.jpg --> us-central1-app
+[debug] [2022-12-16T19:26:18.688Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:18.688Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:26:18.693Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:26:18.693Z] [worker-pool] Adding worker with key us-central1-app, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=2"}}
+[debug] [2022-12-16T19:26:18.694Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-12-16T19:26:18.694Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-12-16T19:26:18.694Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/silvestre.jpg --> us-central1-app
+[debug] [2022-12-16T19:26:18.696Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:18.697Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:26:18.703Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:26:18.703Z] [worker-pool] Adding worker with key us-central1-app, total=3 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=3"}}
+[debug] [2022-12-16T19:26:18.704Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2022-12-16T19:26:18.704Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2022-12-16T19:26:18.704Z] Accepted request GET /kimbo-website/us-central1/app/assets/js/bundle.js --> us-central1-app
+[debug] [2022-12-16T19:26:18.706Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:18.706Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:26:18.713Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:26:18.713Z] [worker-pool] Adding worker with key us-central1-app, total=4 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=4"}}
+[debug] [2022-12-16T19:26:18.717Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 200
+[debug] [2022-12-16T19:26:18.718Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png [stream]
+[debug] [2022-12-16T19:26:18.728Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:18.729Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[info] i  functions: Finished "app" in 44.942733ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 44.942733ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:18 +0000] "GET /assets/img/banner%20revista%20blogg.png HTTP/1.1" 200 2571110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:18 +0000] \"GET /assets/img/banner%20revista%20blogg.png HTTP/1.1\" 200 2571110 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[debug] [2022-12-16T19:26:19.221Z] [runtime-status] [34741] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.222Z] [runtime-status] [34741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.222Z] [runtime-status] [34741] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:26:19.223Z] [runtime-status] [34741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.244Z] [runtime-status] [34741] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:26:19.244Z] [runtime-status] [34741] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:26:19.245Z] [runtime-status] [34741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.245Z] [runtime-status] [34741] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.246Z] [runtime-status] [34741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.246Z] [runtime-status] [34741] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:26:19.258Z] [runtime-status] [34742] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.258Z] [runtime-status] [34742] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.259Z] [runtime-status] [34742] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:26:19.259Z] [runtime-status] [34742] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.267Z] [runtime-status] [34748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.268Z] [runtime-status] [34748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.268Z] [runtime-status] [34748] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:26:19.269Z] [runtime-status] [34748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.280Z] [runtime-status] [34742] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:26:19.280Z] [runtime-status] [34742] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:26:19.281Z] [runtime-status] [34742] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.281Z] [runtime-status] [34742] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.281Z] [runtime-status] [34742] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.282Z] [runtime-status] [34742] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:26:19.290Z] [runtime-status] [34748] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:26:19.290Z] [runtime-status] [34748] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:26:19.291Z] [runtime-status] [34748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.291Z] [runtime-status] [34748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.291Z] [runtime-status] [34748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:26:19.292Z] [runtime-status] [34748] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:26:19.423Z] [runtime-status] [34741] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:34741) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:34741) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:34741) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:26:19.425Z] [runtime-status] [34741] Listening to port: /tmp/fire_emu_82ead29c93f2d917.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34741] Listening to port: /tmp/fire_emu_82ead29c93f2d917.sock"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:26:19.450Z] [runtime-status] [34742] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:34742) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:34742) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:34742) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:26:19.451Z] [runtime-status] [34742] Listening to port: /tmp/fire_emu_85e55e5e9683379b.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34742] Listening to port: /tmp/fire_emu_85e55e5e9683379b.sock"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:26:19.471Z] [runtime-status] [34748] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:34748) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:34748) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:34748) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:26:19.471Z] [runtime-status] [34748] Listening to port: /tmp/fire_emu_dcb5c7af83ffb62c.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [34748] Listening to port: /tmp/fire_emu_dcb5c7af83ffb62c.sock"}}
+[debug] [2022-12-16T19:26:19.521Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE"}}
+[debug] [2022-12-16T19:26:19.521Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:19.521Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[debug] [2022-12-16T19:26:19.522Z] [worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: IDLE"}}
+[debug] [2022-12-16T19:26:19.522Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:19.522Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY"}}
+[debug] [2022-12-16T19:26:19.522Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE"}}
+[debug] [2022-12-16T19:26:19.522Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:19.522Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:19.524Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:19.524Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 0.6845ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.6845ms"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:19.525Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 200
+[debug] [2022-12-16T19:26:19.525Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] "GET /assets/img/eu.jpg HTTP/1.1" 200 11425 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] \"GET /assets/img/eu.jpg HTTP/1.1\" 200 11425 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:26:19.528Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE"}}
+[debug] [2022-12-16T19:26:19.528Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "app" in 3.653319ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 3.653319ms"}}
+[debug] [2022-12-16T19:26:19.529Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 200
+[debug] [2022-12-16T19:26:19.529Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] "GET /assets/img/silvestre.jpg HTTP/1.1" 200 13564 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] \"GET /assets/img/silvestre.jpg HTTP/1.1\" 200 13564 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:26:19.537Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 200
+[debug] [2022-12-16T19:26:19.538Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js [stream]
+[debug] [2022-12-16T19:26:19.539Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE"}}
+[debug] [2022-12-16T19:26:19.539Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 13.938675ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 13.938675ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] "GET /assets/js/bundle.js HTTP/1.1" 200 921646 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] \"GET /assets/js/bundle.js HTTP/1.1\" 200 921646 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/img/favicon.svg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:19.593Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 
+[debug] [2022-12-16T19:26:19.594Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:19.595Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:19.595Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/favicon.svg --> us-central1-app
+[debug] [2022-12-16T19:26:19.597Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:19.597Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg"}}
+[debug] [2022-12-16T19:26:19.597Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:19.597Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:19.600Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:19.600Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 0.990085ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.990085ms"}}
+[debug] [2022-12-16T19:26:19.601Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 200
+[debug] [2022-12-16T19:26:19.601Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] "GET /assets/img/favicon.svg HTTP/1.1" 200 881 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:19 +0000] \"GET /assets/img/favicon.svg HTTP/1.1\" 200 881 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[info] [hosting] Rewriting /search/pt to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.342Z] >>> [apiv2][query] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 
+[debug] [2022-12-16T19:26:22.342Z] >>> [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[debug] [2022-12-16T19:26:22.343Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:22.343Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.343Z] Accepted request POST /kimbo-website/us-central1/app/search/pt --> us-central1-app
+[debug] [2022-12-16T19:26:22.345Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.345Z] [functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt"}}
+[debug] [2022-12-16T19:26:22.345Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.345Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3"}}
+[info] >  [ {"user":"[","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ["}}
+[info] >    { {"user":"  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   {"}}
+[info] >      id: 'feio', {"user":"    id: 'feio',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: 'feio',"}}
+[info] >      terms: [ 'feio' ], {"user":"    terms: [ 'feio' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     terms: [ 'feio' ],"}}
+[info] >      score: 5.506050071711339, {"user":"    score: 5.506050071711339,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     score: 5.506050071711339,"}}
+[info] >      match: { feio: [Array] }, {"user":"    match: { feio: [Array] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     match: { feio: [Array] },"}}
+[info] >      portuguese: 'feio', {"user":"    portuguese: 'feio',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     portuguese: 'feio',"}}
+[info] >      umbundu: [ 'ka ca posokele', 'civĩ' ], {"user":"    umbundu: [ 'ka ca posokele', 'civĩ' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     umbundu: [ 'ka ca posokele', 'civĩ' ],"}}
+[info] >      language: 'pt' {"user":"    language: 'pt'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     language: 'pt'"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  ] {"user":"]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ]"}}
+[debug] [2022-12-16T19:26:22.404Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:22.404Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 51.697338ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 51.697338ms"}}
+[debug] [2022-12-16T19:26:22.405Z] <<< [apiv2][status] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 302
+[debug] [2022-12-16T19:26:22.405Z] <<< [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "POST /search/pt HTTP/1.1" 302 46 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"POST /search/pt HTTP/1.1\" 302 46 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.411Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 
+[debug] [2022-12-16T19:26:22.412Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:22.412Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.412Z] Accepted request GET /kimbo-website/us-central1/app/ --> us-central1-app
+[debug] [2022-12-16T19:26:22.414Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.414Z] [functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/"}}
+[debug] [2022-12-16T19:26:22.414Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.414Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:22.419Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:22.420Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 4.118888ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 4.118888ms"}}
+[debug] [2022-12-16T19:26:22.420Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 200
+[debug] [2022-12-16T19:26:22.420Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "GET / HTTP/1.1" 200 17462 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"GET / HTTP/1.1\" 200 17462 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/js/bundle.js to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.448Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 
+[debug] [2022-12-16T19:26:22.450Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:22.450Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.450Z] Accepted request GET /kimbo-website/us-central1/app/assets/js/bundle.js --> us-central1-app
+[debug] [2022-12-16T19:26:22.452Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.452Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js"}}
+[debug] [2022-12-16T19:26:22.452Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.453Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:22.455Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 200
+[debug] [2022-12-16T19:26:22.455Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js [stream]
+[debug] [2022-12-16T19:26:22.456Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:22.456Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "GET /assets/js/bundle.js HTTP/1.1" 200 921646 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"GET /assets/js/bundle.js HTTP/1.1\" 200 921646 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  functions: Finished "app" in 1.508648ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.508648ms"}}
+[info] [hosting] Rewriting /assets/img/eu.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.474Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 
+[info] [hosting] Rewriting /assets/img/silvestre.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.475Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 
+[info] [hosting] Rewriting /assets/img/banner%20revista%20blogg.png to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.476Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 
+[debug] [2022-12-16T19:26:22.478Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:22.478Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.478Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/eu.jpg --> us-central1-app
+[debug] [2022-12-16T19:26:22.480Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.480Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg"}}
+[debug] [2022-12-16T19:26:22.480Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.480Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[debug] [2022-12-16T19:26:22.481Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.481Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:26:22.481Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/silvestre.jpg --> us-central1-app
+[debug] [2022-12-16T19:26:22.482Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.482Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg"}}
+[debug] [2022-12-16T19:26:22.482Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.482Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY"}}
+[debug] [2022-12-16T19:26:22.483Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-12-16T19:26:22.483Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-12-16T19:26:22.483Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png --> us-central1-app
+[debug] [2022-12-16T19:26:22.485Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.485Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png"}}
+[debug] [2022-12-16T19:26:22.485Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.485Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 0.753755ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.753755ms"}}
+[debug] [2022-12-16T19:26:22.488Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:22.488Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 1.344625ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.344625ms"}}
+[debug] [2022-12-16T19:26:22.490Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 200
+[debug] [2022-12-16T19:26:22.490Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "GET /assets/img/eu.jpg HTTP/1.1" 200 11425 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"GET /assets/img/eu.jpg HTTP/1.1\" 200 11425 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:26:22.491Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE"}}
+[debug] [2022-12-16T19:26:22.491Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.492Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 200
+[debug] [2022-12-16T19:26:22.493Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png [stream]
+[debug] [2022-12-16T19:26:22.493Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 200
+[debug] [2022-12-16T19:26:22.493Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "GET /assets/img/silvestre.jpg HTTP/1.1" 200 13564 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"GET /assets/img/silvestre.jpg HTTP/1.1\" 200 13564 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:26:22.500Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE"}}
+[debug] [2022-12-16T19:26:22.500Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 11.032143ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 11.032143ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "GET /assets/img/banner%20revista%20blogg.png HTTP/1.1" 200 2571110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"GET /assets/img/banner%20revista%20blogg.png HTTP/1.1\" 200 2571110 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] "GET /assets/img/favicon.svg HTTP/1.1" - - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:22 +0000] \"GET /assets/img/favicon.svg HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/img/favicon.svg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:22.623Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 
+[debug] [2022-12-16T19:26:22.625Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:22.625Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:22.625Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/favicon.svg --> us-central1-app
+[debug] [2022-12-16T19:26:22.628Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:22.628Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg"}}
+[debug] [2022-12-16T19:26:22.628Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:22.628Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:22.630Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:22.630Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 0.672778ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.672778ms"}}
+[debug] [2022-12-16T19:26:22.631Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 200
+[debug] [2022-12-16T19:26:22.631Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg [stream]
+[info] [hosting] Rewriting /search/pt to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:27.193Z] >>> [apiv2][query] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 
+[debug] [2022-12-16T19:26:27.194Z] >>> [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[debug] [2022-12-16T19:26:27.195Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:27.195Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:27.195Z] Accepted request POST /kimbo-website/us-central1/app/search/pt --> us-central1-app
+[debug] [2022-12-16T19:26:27.197Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:27.197Z] [functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt"}}
+[debug] [2022-12-16T19:26:27.197Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:27.197Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3"}}
+[info] >  [ {"user":"[","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ["}}
+[info] >    { {"user":"  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   {"}}
+[info] >      id: 'bonito', {"user":"    id: 'bonito',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: 'bonito',"}}
+[info] >      terms: [ 'bonito' ], {"user":"    terms: [ 'bonito' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     terms: [ 'bonito' ],"}}
+[info] >      score: 5.120143789426374, {"user":"    score: 5.120143789426374,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     score: 5.120143789426374,"}}
+[info] >      match: { bonito: [Array] }, {"user":"    match: { bonito: [Array] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     match: { bonito: [Array] },"}}
+[info] >      portuguese: 'bonito', {"user":"    portuguese: 'bonito',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     portuguese: 'bonito',"}}
+[info] >      umbundu: [ 'ca posoka' ], {"user":"    umbundu: [ 'ca posoka' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     umbundu: [ 'ca posoka' ],"}}
+[info] >      language: 'pt' {"user":"    language: 'pt'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     language: 'pt'"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  ] {"user":"]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ]"}}
+[debug] [2022-12-16T19:26:27.226Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:27.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 25.555486ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 25.555486ms"}}
+[debug] [2022-12-16T19:26:27.227Z] <<< [apiv2][status] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 302
+[debug] [2022-12-16T19:26:27.227Z] <<< [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] "POST /search/pt HTTP/1.1" 302 46 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] \"POST /search/pt HTTP/1.1\" 302 46 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:27.234Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 
+[debug] [2022-12-16T19:26:27.235Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:27.235Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:27.235Z] Accepted request GET /kimbo-website/us-central1/app/ --> us-central1-app
+[debug] [2022-12-16T19:26:27.237Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:27.237Z] [functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/"}}
+[debug] [2022-12-16T19:26:27.237Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:27.237Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:27.241Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:27.241Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 2.929202ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 2.929202ms"}}
+[debug] [2022-12-16T19:26:27.242Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 200
+[debug] [2022-12-16T19:26:27.242Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] "GET / HTTP/1.1" 200 17007 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] \"GET / HTTP/1.1\" 200 17007 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/js/bundle.js to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:27.272Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 
+[debug] [2022-12-16T19:26:27.273Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:27.273Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:27.273Z] Accepted request GET /kimbo-website/us-central1/app/assets/js/bundle.js --> us-central1-app
+[debug] [2022-12-16T19:26:27.275Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:27.275Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js"}}
+[debug] [2022-12-16T19:26:27.275Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:27.275Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:27.279Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 200
+[debug] [2022-12-16T19:26:27.279Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js [stream]
+[debug] [2022-12-16T19:26:27.282Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:27.282Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 5.265857ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 5.265857ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] "GET /assets/js/bundle.js HTTP/1.1" 200 921646 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] \"GET /assets/js/bundle.js HTTP/1.1\" 200 921646 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/img/banner%20revista%20blogg.png to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:27.305Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 
+[info] [hosting] Rewriting /assets/img/eu.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:27.305Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 
+[info] [hosting] Rewriting /assets/img/silvestre.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:26:27.306Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 
+[debug] [2022-12-16T19:26:27.307Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:26:27.307Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:26:27.307Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png --> us-central1-app
+[debug] [2022-12-16T19:26:27.309Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:27.309Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png"}}
+[debug] [2022-12-16T19:26:27.309Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:27.309Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[debug] [2022-12-16T19:26:27.309Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-12-16T19:26:27.309Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:26:27.309Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/eu.jpg --> us-central1-app
+[debug] [2022-12-16T19:26:27.311Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:27.311Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg"}}
+[debug] [2022-12-16T19:26:27.311Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:27.311Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY"}}
+[debug] [2022-12-16T19:26:27.312Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-12-16T19:26:27.312Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-12-16T19:26:27.312Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/silvestre.jpg --> us-central1-app
+[debug] [2022-12-16T19:26:27.314Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:26:27.314Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg"}}
+[debug] [2022-12-16T19:26:27.314Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:26:27.314Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:26:27.317Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE"}}
+[debug] [2022-12-16T19:26:27.317Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Finished "app" in 0.929322ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.929322ms"}}
+[debug] [2022-12-16T19:26:27.319Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE"}}
+[debug] [2022-12-16T19:26:27.319Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "app" in 1.150541ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.150541ms"}}
+[debug] [2022-12-16T19:26:27.320Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 200
+[debug] [2022-12-16T19:26:27.320Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] "GET /assets/img/eu.jpg HTTP/1.1" 200 11425 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] \"GET /assets/img/eu.jpg HTTP/1.1\" 200 11425 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:26:27.320Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 200
+[debug] [2022-12-16T19:26:27.320Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png [stream]
+[debug] [2022-12-16T19:26:27.322Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 200
+[debug] [2022-12-16T19:26:27.322Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] "GET /assets/img/silvestre.jpg HTTP/1.1" 200 13564 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] \"GET /assets/img/silvestre.jpg HTTP/1.1\" 200 13564 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:26:27.327Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:26:27.327Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] "GET /assets/img/banner%20revista%20blogg.png HTTP/1.1" 200 2571110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:26:27 +0000] \"GET /assets/img/banner%20revista%20blogg.png HTTP/1.1\" 200 2571110 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  functions: Finished "app" in 11.387407ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 11.387407ms"}}
+[debug] [2022-12-16T19:27:31.261Z] File /home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/src/controllers/home_controller.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/src/controllers/home_controller.js changed, reloading triggers"}}
+[debug] [2022-12-16T19:27:32.263Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-16T19:27:33.155Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "local": "nodemon server.js --ignore public --ignore frontend ",
+    "dev": "webpack -w "
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0-beta3",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "core-js": "^3.21.1",
+    "css-loader": "^6.5.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^15.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "minisearch": "^3.3.0",
+    "mongoose": "^6.1.9",
+    "regenerator-runtime": "^0.13.9",
+    "style-loader": "^3.3.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "private": true
+}
+[debug] [2022-12-16T19:27:33.155Z] Building nodejs source
+[debug] [2022-12-16T19:27:33.155Z] Analyzing nodejs backend spec
+[debug] [2022-12-16T19:27:33.155Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-16T19:27:33.282Z] Serving at port 9005
+
+[debug] [2022-12-16T19:27:33.448Z] undefined
+
+[debug] [2022-12-16T19:27:33.451Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-16T19:27:33.455Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-16T19:27:33.733Z] Connected
+
+[info] [hosting] Rewriting /search/pt to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.368Z] >>> [apiv2][query] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 
+[debug] [2022-12-16T19:27:39.368Z] >>> [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[debug] [2022-12-16T19:27:39.369Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:27:39.369Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.369Z] Accepted request POST /kimbo-website/us-central1/app/search/pt --> us-central1-app
+[debug] [2022-12-16T19:27:39.371Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.371Z] [functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt"}}
+[debug] [2022-12-16T19:27:39.371Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.371Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3"}}
+[info] >  [ {"user":"[","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ["}}
+[info] >    { {"user":"  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   {"}}
+[info] >      id: 'feio', {"user":"    id: 'feio',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: 'feio',"}}
+[info] >      terms: [ 'feio' ], {"user":"    terms: [ 'feio' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     terms: [ 'feio' ],"}}
+[info] >      score: 5.506050071711339, {"user":"    score: 5.506050071711339,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     score: 5.506050071711339,"}}
+[info] >      match: { feio: [Array] }, {"user":"    match: { feio: [Array] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     match: { feio: [Array] },"}}
+[info] >      portuguese: 'feio', {"user":"    portuguese: 'feio',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     portuguese: 'feio',"}}
+[info] >      umbundu: [ 'ka ca posokele', 'civĩ' ], {"user":"    umbundu: [ 'ka ca posokele', 'civĩ' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     umbundu: [ 'ka ca posokele', 'civĩ' ],"}}
+[info] >      language: 'pt' {"user":"    language: 'pt'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     language: 'pt'"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  ] {"user":"]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ]"}}
+[debug] [2022-12-16T19:27:39.417Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:27:39.417Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 42.957311ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 42.957311ms"}}
+[debug] [2022-12-16T19:27:39.418Z] <<< [apiv2][status] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 302
+[debug] [2022-12-16T19:27:39.418Z] <<< [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "POST /search/pt HTTP/1.1" 302 46 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"POST /search/pt HTTP/1.1\" 302 46 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.426Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 
+[debug] [2022-12-16T19:27:39.427Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:27:39.427Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.427Z] Accepted request GET /kimbo-website/us-central1/app/ --> us-central1-app
+[debug] [2022-12-16T19:27:39.430Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.430Z] [functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/"}}
+[debug] [2022-12-16T19:27:39.430Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.430Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:27:39.435Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:27:39.435Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 3.125609ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 3.125609ms"}}
+[debug] [2022-12-16T19:27:39.435Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 200
+[debug] [2022-12-16T19:27:39.436Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "GET / HTTP/1.1" 200 17462 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"GET / HTTP/1.1\" 200 17462 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/js/bundle.js to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.474Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 
+[debug] [2022-12-16T19:27:39.475Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:27:39.476Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.476Z] Accepted request GET /kimbo-website/us-central1/app/assets/js/bundle.js --> us-central1-app
+[debug] [2022-12-16T19:27:39.477Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.477Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js"}}
+[debug] [2022-12-16T19:27:39.477Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.477Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:27:39.481Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:27:39.481Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-16T19:27:39.482Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 200
+[debug] [2022-12-16T19:27:39.482Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js [stream]
+[info] i  functions: Finished "app" in 2.021204ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 2.021204ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "GET /assets/js/bundle.js HTTP/1.1" 200 921646 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"GET /assets/js/bundle.js HTTP/1.1\" 200 921646 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/img/eu.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.501Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 
+[info] [hosting] Rewriting /assets/img/silvestre.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.503Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 
+[info] [hosting] Rewriting /assets/img/banner%20revista%20blogg.png to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.503Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 
+[debug] [2022-12-16T19:27:39.504Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:27:39.504Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.504Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/eu.jpg --> us-central1-app
+[debug] [2022-12-16T19:27:39.506Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.506Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg"}}
+[debug] [2022-12-16T19:27:39.506Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.506Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[debug] [2022-12-16T19:27:39.507Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.507Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:27:39.508Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/silvestre.jpg --> us-central1-app
+[debug] [2022-12-16T19:27:39.509Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.509Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg"}}
+[debug] [2022-12-16T19:27:39.509Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.509Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: BUSY"}}
+[debug] [2022-12-16T19:27:39.510Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-12-16T19:27:39.510Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-12-16T19:27:39.510Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png --> us-central1-app
+[debug] [2022-12-16T19:27:39.512Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.512Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png"}}
+[debug] [2022-12-16T19:27:39.512Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.512Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 0.75997ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.75997ms"}}
+[debug] [2022-12-16T19:27:39.514Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:27:39.514Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:27:39.516Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 200
+[debug] [2022-12-16T19:27:39.516Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "GET /assets/img/eu.jpg HTTP/1.1" 200 11425 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"GET /assets/img/eu.jpg HTTP/1.1\" 200 11425 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 1.412702ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.412702ms"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:27:39.519Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: IDLE"}}
+[debug] [2022-12-16T19:27:39.519Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.520Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 200
+[debug] [2022-12-16T19:27:39.520Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "GET /assets/img/silvestre.jpg HTTP/1.1" 200 13564 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"GET /assets/img/silvestre.jpg HTTP/1.1\" 200 13564 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:27:39.522Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 200
+[debug] [2022-12-16T19:27:39.522Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png [stream]
+[debug] [2022-12-16T19:27:39.534Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: IDLE"}}
+[debug] [2022-12-16T19:27:39.534Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "GET /assets/img/banner%20revista%20blogg.png HTTP/1.1" 200 2571110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"GET /assets/img/banner%20revista%20blogg.png HTTP/1.1\" 200 2571110 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  functions: Finished "app" in 18.46452ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 18.46452ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] "GET /assets/img/favicon.svg HTTP/1.1" - - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:27:39 +0000] \"GET /assets/img/favicon.svg HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/img/favicon.svg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:27:39.668Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 
+[debug] [2022-12-16T19:27:39.669Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:27:39.669Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:27:39.669Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/favicon.svg --> us-central1-app
+[debug] [2022-12-16T19:27:39.672Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:27:39.672Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg"}}
+[debug] [2022-12-16T19:27:39.672Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:27:39.672Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:27:39.675Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: IDLE"}}
+[debug] [2022-12-16T19:27:39.675Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 1.427949ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.427949ms"}}
+[debug] [2022-12-16T19:27:39.675Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 200
+[debug] [2022-12-16T19:27:39.675Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg [stream]
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: FINISHING"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: FINISHING"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: FINISHING"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:27:43.462Z] [worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: FINISHING"}}
+[debug] [2022-12-16T19:27:43.467Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: exited"}}
+[debug] [2022-12-16T19:27:43.467Z] [worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-19cfbea3-6e3c-40de-9516-855d47304e94]: FINISHED"}}
+[debug] [2022-12-16T19:27:43.467Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: exited"}}
+[debug] [2022-12-16T19:27:43.468Z] [worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-1798ebf5-7178-477b-944e-59d648312cea]: FINISHED"}}
+[debug] [2022-12-16T19:27:43.468Z] [worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: exited"}}
+[debug] [2022-12-16T19:27:43.468Z] [worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-d3b3842f-6a82-4b26-b38a-dc8b5875653a]: FINISHED"}}
+[debug] [2022-12-16T19:27:43.468Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: exited"}}
+[debug] [2022-12-16T19:27:43.468Z] [worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-3e5c4544-f9a1-4a3e-8a3f-d227f3e8927e]: FINISHED"}}
+[debug] [2022-12-16T19:34:51.561Z] File /home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/src/controllers/home_controller.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/src/controllers/home_controller.js changed, reloading triggers"}}
+[debug] [2022-12-16T19:34:52.561Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-16T19:34:53.458Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "local": "nodemon server.js --ignore public --ignore frontend ",
+    "dev": "webpack -w "
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0-beta3",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "core-js": "^3.21.1",
+    "css-loader": "^6.5.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^15.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "minisearch": "^3.3.0",
+    "mongoose": "^6.1.9",
+    "regenerator-runtime": "^0.13.9",
+    "style-loader": "^3.3.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "private": true
+}
+[debug] [2022-12-16T19:34:53.458Z] Building nodejs source
+[debug] [2022-12-16T19:34:53.458Z] Analyzing nodejs backend spec
+[debug] [2022-12-16T19:34:53.458Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-16T19:34:53.579Z] Serving at port 9005
+
+[debug] [2022-12-16T19:34:53.739Z] undefined
+
+[debug] [2022-12-16T19:34:53.742Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-16T19:34:53.745Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-16T19:34:54.035Z] Connected
+
+[info] [hosting] Rewriting /search/pt to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:34:58.908Z] >>> [apiv2][query] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 
+[debug] [2022-12-16T19:34:58.908Z] >>> [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[debug] [2022-12-16T19:34:58.909Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:34:58.909Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:34:58.909Z] Accepted request POST /kimbo-website/us-central1/app/search/pt --> us-central1-app
+[debug] [2022-12-16T19:34:58.911Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:34:58.911Z] [functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/search/pt, mapping to path=/search/pt"}}
+[debug] [2022-12-16T19:34:58.911Z] [worker-pool] Cleaned up workers for us-central1-app: 4 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-app: 4 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:34:58.917Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:34:58.918Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2022-12-16T19:34:59.370Z] [runtime-status] [37252] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:34:59.371Z] [runtime-status] [37252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:34:59.371Z] [runtime-status] [37252] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:34:59.372Z] [runtime-status] [37252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:34:59.391Z] [runtime-status] [37252] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:34:59.391Z] [runtime-status] [37252] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:34:59.392Z] [runtime-status] [37252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:34:59.393Z] [runtime-status] [37252] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:34:59.393Z] [runtime-status] [37252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:34:59.393Z] [runtime-status] [37252] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:34:59.553Z] [runtime-status] [37252] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:37252) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:37252) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:37252) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:34:59.555Z] [runtime-status] [37252] Listening to port: /tmp/fire_emu_bfc1897a48cbfcd5.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37252] Listening to port: /tmp/fire_emu_bfc1897a48cbfcd5.sock"}}
+[debug] [2022-12-16T19:34:59.625Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:34:59.625Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:34:59.625Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy2"}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[info] >  OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3 {"user":"OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy3"}}
+[info] >  [ {"user":"[","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ["}}
+[info] >    { {"user":"  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   {"}}
+[info] >      id: 'besta', {"user":"    id: 'besta',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: 'besta',"}}
+[info] >      terms: [ 'besta' ], {"user":"    terms: [ 'besta' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     terms: [ 'besta' ],"}}
+[info] >      score: 5.120143789426374, {"user":"    score: 5.120143789426374,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     score: 5.120143789426374,"}}
+[info] >      match: { besta: [Array] }, {"user":"    match: { besta: [Array] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     match: { besta: [Array] },"}}
+[info] >      portuguese: 'besta', {"user":"    portuguese: 'besta',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     portuguese: 'besta',"}}
+[info] >      umbundu: [ 'ocinyama', 'ocindindi' ], {"user":"    umbundu: [ 'ocinyama', 'ocindindi' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     umbundu: [ 'ocinyama', 'ocindindi' ],"}}
+[info] >      language: 'pt' {"user":"    language: 'pt'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     language: 'pt'"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  ] {"user":"]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m ]"}}
+[info] >  redirecting {"user":"redirecting","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m redirecting"}}
+[debug] [2022-12-16T19:34:59.986Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:34:59.987Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 354.449854ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 354.449854ms"}}
+[debug] [2022-12-16T19:34:59.987Z] <<< [apiv2][status] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt 302
+[debug] [2022-12-16T19:34:59.988Z] <<< [apiv2][body] POST http://127.0.0.1:5001/kimbo-website/us-central1/app/search/pt [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:34:59 +0000] "POST /search/pt HTTP/1.1" 302 46 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:34:59 +0000] \"POST /search/pt HTTP/1.1\" 302 46 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:34:59.994Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 
+[debug] [2022-12-16T19:34:59.995Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:34:59.995Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:34:59.995Z] Accepted request GET /kimbo-website/us-central1/app/ --> us-central1-app
+[debug] [2022-12-16T19:34:59.997Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:34:59.997Z] [functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/, mapping to path=/"}}
+[debug] [2022-12-16T19:34:59.997Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:34:59.997Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:35:00.006Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:35:00.006Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 6.92817ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 6.92817ms"}}
+[debug] [2022-12-16T19:35:00.007Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ 200
+[debug] [2022-12-16T19:35:00.007Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/ [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] "GET / HTTP/1.1" 200 17461 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] \"GET / HTTP/1.1\" 200 17461 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] [hosting] Rewriting /assets/js/bundle.js to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:35:00.043Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 
+[debug] [2022-12-16T19:35:00.044Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:35:00.044Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:35:00.044Z] Accepted request GET /kimbo-website/us-central1/app/assets/js/bundle.js --> us-central1-app
+[debug] [2022-12-16T19:35:00.046Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:35:00.046Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/js/bundle.js, mapping to path=/assets/js/bundle.js"}}
+[debug] [2022-12-16T19:35:00.046Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.046Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:35:00.051Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js 200
+[debug] [2022-12-16T19:35:00.051Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/js/bundle.js [stream]
+[debug] [2022-12-16T19:35:00.052Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:35:00.053Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] "GET /assets/js/bundle.js HTTP/1.1" 200 921646 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] \"GET /assets/js/bundle.js HTTP/1.1\" 200 921646 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  functions: Finished "app" in 5.046307ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 5.046307ms"}}
+[info] [hosting] Rewriting /assets/img/eu.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:35:00.064Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 
+[info] [hosting] Rewriting /assets/img/banner%20revista%20blogg.png to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:35:00.065Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 
+[info] [hosting] Rewriting /assets/img/silvestre.jpg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:35:00.066Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 
+[debug] [2022-12-16T19:35:00.066Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-16T19:35:00.066Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-16T19:35:00.066Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/eu.jpg --> us-central1-app
+[debug] [2022-12-16T19:35:00.068Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:35:00.068Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/eu.jpg, mapping to path=/assets/img/eu.jpg"}}
+[debug] [2022-12-16T19:35:00.068Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.068Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY"}}
+[debug] [2022-12-16T19:35:00.069Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-12-16T19:35:00.069Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:35:00.069Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png --> us-central1-app
+[debug] [2022-12-16T19:35:00.071Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:35:00.071Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png, mapping to path=/assets/img/banner%20revista%20blogg.png"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:35:00.078Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.078Z] [worker-pool] Adding worker with key us-central1-app, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=2"}}
+[debug] [2022-12-16T19:35:00.078Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-12-16T19:35:00.079Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-12-16T19:35:00.079Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/silvestre.jpg --> us-central1-app
+[debug] [2022-12-16T19:35:00.081Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:35:00.081Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/silvestre.jpg, mapping to path=/assets/img/silvestre.jpg"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-12-16T19:35:00.085Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.085Z] [worker-pool] Adding worker with key us-central1-app, total=3 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=3"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 0.822556ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.822556ms"}}
+[debug] [2022-12-16T19:35:00.088Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:35:00.089Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-16T19:35:00.089Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg 200
+[debug] [2022-12-16T19:35:00.089Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/eu.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] "GET /assets/img/eu.jpg HTTP/1.1" 200 11425 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] \"GET /assets/img/eu.jpg HTTP/1.1\" 200 11425 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:35:00.562Z] [runtime-status] [37279] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.562Z] [runtime-status] [37278] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.563Z] [runtime-status] [37279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.563Z] [runtime-status] [37279] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:35:00.563Z] [runtime-status] [37278] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.563Z] [runtime-status] [37278] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-16T19:35:00.563Z] [runtime-status] [37279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.563Z] [runtime-status] [37278] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.584Z] [runtime-status] [37279] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:35:00.584Z] [runtime-status] [37279] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:35:00.585Z] [runtime-status] [37278] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-16T19:35:00.585Z] [runtime-status] [37279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.585Z] [runtime-status] [37278] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:35:00.585Z] [runtime-status] [37278] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.586Z] [runtime-status] [37279] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.586Z] [runtime-status] [37279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.586Z] [runtime-status] [37279] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-16T19:35:00.586Z] [runtime-status] [37278] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.586Z] [runtime-status] [37278] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-16T19:35:00.586Z] [runtime-status] [37278] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[info] [hosting] Rewriting /assets/img/favicon.svg to http://127.0.0.1:5001/kimbo-website/us-central1/app for local Function us-central1/app
+[debug] [2022-12-16T19:35:00.613Z] >>> [apiv2][query] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 
+[debug] [2022-12-16T19:35:00.614Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-12-16T19:35:00.615Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-12-16T19:35:00.615Z] Accepted request GET /kimbo-website/us-central1/app/assets/img/favicon.svg --> us-central1-app
+[debug] [2022-12-16T19:35:00.617Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-16T19:35:00.618Z] [functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/kimbo-website/us-central1/app/assets/img/favicon.svg, mapping to path=/assets/img/favicon.svg"}}
+[debug] [2022-12-16T19:35:00.618Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.618Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:35:00.622Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:35:00.622Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Finished "app" in 1.043353ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.043353ms"}}
+[debug] [2022-12-16T19:35:00.623Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg 200
+[debug] [2022-12-16T19:35:00.623Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/favicon.svg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] "GET /assets/img/favicon.svg HTTP/1.1" 200 881 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] \"GET /assets/img/favicon.svg HTTP/1.1\" 200 881 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:35:00.755Z] [runtime-status] [37279] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:37279) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:37279) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:37279) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:35:00.756Z] [runtime-status] [37279] Listening to port: /tmp/fire_emu_00a60e3798046baf.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37279] Listening to port: /tmp/fire_emu_00a60e3798046baf.sock"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2022-12-16T19:35:00.764Z] [runtime-status] [37278] Functions runtime initialized. {"cwd":"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Functions runtime initialized. {\"cwd\":\"/home/k0r1nga69/Documents/Coding/Projects/Kimbo-WebApp/functions\",\"node_version\":\"18.12.1\"}"}}
+[info] >  (node:37278) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning. {"user":"(node:37278) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:37278) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2022-12-16T19:35:00.765Z] [runtime-status] [37278] Listening to port: /tmp/fire_emu_ba8910edd008c224.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [37278] Listening to port: /tmp/fire_emu_ba8910edd008c224.sock"}}
+[debug] [2022-12-16T19:35:00.794Z] [worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: IDLE"}}
+[debug] [2022-12-16T19:35:00.795Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.795Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: BUSY"}}
+[debug] [2022-12-16T19:35:00.795Z] [worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: IDLE"}}
+[debug] [2022-12-16T19:35:00.795Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-16T19:35:00.795Z] [worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:35:00.797Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: IDLE"}}
+[debug] [2022-12-16T19:35:00.797Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "app" in 0.853762ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.853762ms"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-16T19:35:00.798Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg 200
+[debug] [2022-12-16T19:35:00.798Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/silvestre.jpg [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] "GET /assets/img/silvestre.jpg HTTP/1.1" 200 13564 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] \"GET /assets/img/silvestre.jpg HTTP/1.1\" 200 13564 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[debug] [2022-12-16T19:35:00.801Z] <<< [apiv2][status] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png 200
+[debug] [2022-12-16T19:35:00.801Z] <<< [apiv2][body] GET http://127.0.0.1:5001/kimbo-website/us-central1/app/assets/img/banner%20revista%20blogg.png [stream]
+[debug] [2022-12-16T19:35:00.806Z] [worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: IDLE"}}
+[debug] [2022-12-16T19:35:00.806Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 8.800216ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 8.800216ms"}}
+[info] i  hosting: 127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] "GET /assets/img/banner%20revista%20blogg.png HTTP/1.1" 200 2571110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Dec/2022:19:35:00 +0000] \"GET /assets/img/banner%20revista%20blogg.png HTTP/1.1\" 200 2571110 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[info] >  Connected {"user":"Connected","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Connected"}}
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-12-16T19:35:03.750Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:35:03.750Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: FINISHING"}}
+[debug] [2022-12-16T19:35:03.750Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:35:03.750Z] [worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: FINISHING"}}
+[debug] [2022-12-16T19:35:03.750Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-16T19:35:03.750Z] [worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: FINISHING"}}
+[debug] [2022-12-16T19:35:03.755Z] [worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: exited"}}
+[debug] [2022-12-16T19:35:03.755Z] [worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-68193f73-929e-4339-8b6d-1ddbf8ef8e95]: FINISHED"}}
+[debug] [2022-12-16T19:35:03.755Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: exited"}}
+[debug] [2022-12-16T19:35:03.755Z] [worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-254ab9ad-4de6-4bba-8b1a-8fb2b1c30d23]: FINISHED"}}
+[debug] [2022-12-16T19:35:03.756Z] [worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: exited"}}
+[debug] [2022-12-16T19:35:03.756Z] [worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a20b84d2-9439-42ba-9ac8-598bbdeaf742]: FINISHED"}}
