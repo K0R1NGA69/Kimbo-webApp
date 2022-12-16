@@ -48,17 +48,16 @@ exports.search = async (req, res) => {
                         return
                 }
                 result["0"].language = "pt"
-                req.flash('result', result)
+                // req.flash('result', result)
                 console.log(result)
+                // res.render("index",{result})
                 // res.send({result})
                 req.session.save(() => {
                         res.redirect("/")
                         return
-                        
-                        
             
                 })
-                
+     
 
         }
         else {
