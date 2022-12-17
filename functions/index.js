@@ -45,9 +45,9 @@ app.set("view engine", "ejs")
 app.use(routes)
 
 const PORT = process.env.PORT || 3000
-console.log(process.NODE_ENV)
+// console.log(process.NODE_ENV)
 
-// Run Local without firebase emulator
+// Run Local, don't uncomment when using firebase emulator
 // app.on("Done", () => {
 //     app.listen(PORT, () => {
 //         console.log("Acess http://localhost:3000")

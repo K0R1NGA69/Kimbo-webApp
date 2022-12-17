@@ -41,7 +41,7 @@
 
                 <div class="card  text-dark shadow-sm ">
                     <%if(errors.length>0){%>
-                        <%mode=0%>
+                        <%data.mode=0%>
                         <%errors.forEach((error)=>{%>
                             
                             <h6 class="card-title mt-3">
@@ -55,8 +55,9 @@
                             </p>
                         <%})%>
                     <%}else{%>
-                        <%if(result["0"]){%>
-                            <%const word=result["0"]%>
+                        <%if(data.searchResult["0"]){%>
+                            <%const word=data.searchResult["0"]%>
+                            
                             <%if(word.language==="pt" ){%>
                                 <div class="card-body ">
                                     <div class="h4 mb-3 text-center text-capitalize">
@@ -91,7 +92,9 @@
                                         <%=word.terms%>
                                     </div>
                                     <h6 class="card-title text-capitalize">
-                                        <%=word.portuguese%>
+                                        <%data.searchResult.map((w)=>{%>
+                                            <%=w.portuguese%>,
+                                        <%})%>
                                     </h6>
                                     <p class="card-text mt-3">
                                         <span class="bi bi-pencil-square"><a
@@ -104,12 +107,13 @@
                             <%}%>
                         <%}%> 
                     <%}%>
-                    <%if (mode!==0 ){%>
+                    <%if (!data.searchResult.length ){%>
                         <div class="card-body" >
                             <div class="h4 mb-3 text-center text-capitalize">
-                                Aprender <%=mode%>
+                                Aprender <%=data.mode%>
                             </div>
                             <h6 class="card-title text-capitalize">
+                                <%=data.searchResult%>
                                 Oku lilongisa
                             </h6>
                             <p class="card-text mt-3">

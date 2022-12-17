@@ -4,9 +4,10 @@ const MiniSearch = require("minisearch")
 
 
 let mode = "pt"
-
-exports.search = async (req, res) => {
-        const s_mode = req.params.mode
+let searchResult = []
+exports.search = async (req, res,next) => {
+        const s_mode = req.params.data
+        console.log(s_mode)
         const word = req.body.searchword.toLowerCase()
         const dictionary = new DictBd(word)
         console.log("OOOOOOOOOOOOOOOOOOOOOOOOOOOkEEEEEEy")
@@ -48,15 +49,17 @@ exports.search = async (req, res) => {
                         return
                 }
                 result["0"].language = "pt"
-                await req.flash('result', result)
-                console.log(result)
-                // res.render("index",{result})
+                // await req.flash('result', result)
+                console.log(result.match)
+                searchResult = result
+                
+               return  res.redirect("/")
                 // res.send({result})
-                req.session.save(() => {
-                        res.redirect("/")
-                        return
+                // req.session.save(() => {
+                //         res.redirect("/")
+                //         return
             
-                })
+                // })
      
 
         }
@@ -72,17 +75,22 @@ exports.search = async (req, res) => {
                 }
                 console.log(result)
                 result["0"].language = "ub"
-                req.flash('result', result)
-                mode = "ub"
-                req.session.save(() => {
-                        res.redirect("/")
-                })
+                searchResult = result
+                return  res.redirect("/")
+                // req.flash('result', result)
+                // mode = "ub"
+                // req.session.save(() => {
+                //         res.redirect("/")
+                // })
 
         }
 
 }
 exports.index = async (req, res) => {
-        res.render("index", { mode })
+        
+        let data ={searchResult,mode}
+        console.log(data)
+        res.render("index", { data })
 
 }
 exports.ads = async (req, res) => {
